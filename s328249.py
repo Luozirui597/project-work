@@ -25,3 +25,8 @@ def solution(p: Problem):
         path[-1] = (0, 0)
 
     return path
+
+if __name__ == "__main__":
+    p = Problem(num_cities=100, alpha=1, beta=2, density=0.5)
+    path = solution(p)
+    print(path)
