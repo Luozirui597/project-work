@@ -16,6 +16,7 @@ def solution(p: Problem):
 
     path = solver.construct_full_path(best_individual)
 
+    # Ensure path ends at (0, 0)
     if not path:
         return [(0, 0)]
     last_city, last_gold = path[-1]
@@ -26,7 +27,7 @@ def solution(p: Problem):
 
     return path
 
-if __name__ == "__main__":
-    p = Problem(num_cities=100, alpha=1, beta=2, density=0.5)
-    path = solution(p)
-    print(path)
+# if __name__ == "__main__":
+#     p = Problem(num_cities=100, alpha=1, beta=2, density=0.5)
+#     path = solution(p)
+#     print(path)

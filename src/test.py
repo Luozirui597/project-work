@@ -12,13 +12,6 @@ from s328249 import solution
 
 
 def compute_total_cost(p: Problem, actions: List[Tuple[int, float]]) -> float:
-    """
-    Compute total cost of an action list [(city, gold), ...] using Problem.cost().
-    Rule assumed (consistent with your earlier convention):
-      - You travel from actions[i].city -> actions[i+1].city with current carried_gold
-      - Upon arriving at the next city, you collect actions[i+1].gold (if > 0)
-      - When you arrive at city 0, you unload (carried_gold = 0)
-    """
     if not actions:
         return float("inf")
 
