@@ -17,17 +17,16 @@ def solution(p: Problem):
     path = solver.construct_full_path(best_individual)
 
     # Ensure path ends at (0, 0)
-    if not path:
-        return [(0, 0)]
-    last_city, last_gold = path[-1]
-    if int(last_city) != 0 or float(last_gold) != 0.0:
-        path.append((0, 0))
-    else:
-        path[-1] = (0, 0)
-
+    # if not path:
+    #     return [(0, 0)]
+    # last_city, last_gold = path[-1]
+    # if int(last_city) != 0 or float(last_gold) != 0.0:
+    #     path.append((0, 0))
+    # else:
+    #     path[-1] = (0, 0)
     return path
 
 # if __name__ == "__main__":
-#     p = Problem(num_cities=100, alpha=1, beta=2, density=0.5)
+#     p = Problem(num_cities=50, alpha=1, beta=2, density=1)
 #     path = solution(p)
 #     print(path)
