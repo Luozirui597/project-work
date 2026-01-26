@@ -48,7 +48,7 @@ An enhanced version of GA specifically designed to handle high-penalty scenarios
 
 **Usage:**
 Run `s328249.py` to output the path and collected gold.
-Because it consistently achieved the best results in our experiments, I selected SplitGA as the final solver to tackle the problem.
+Because it consistently achieved the best results in our experiments, I selected SplitGA as the final solver to do the problem.
 If you want to test additional methods and obtain cost/baseline comparisons, run `src/test.py`.
 
 ### Performance Insights
